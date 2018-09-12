@@ -4,10 +4,10 @@
              x:Class="TestAppX2.View.PersonListPage" Title="Contact list">
     <StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button x:Name="AddButton" Text="Add" Command="{Binding CreatePersonCommand}" CommandParameter="{Binding}"/>
-            <Button x:Name="EditButton" Text="Edit" Command="{Binding EditPersonCommand}" CommandParameter="{Binding}"/>
-            <Button x:Name="DeleteButton" Text="Delete" Command="{Binding DeletePersonCommand}" CommandParameter="{Binding}"/>
-            <Button x:Name="BackButton" Text="Back" Command="{Binding BackCommand}" />
+            <Button x:Name="AddButton" IsVisible="true" Text="Add" Command="{Binding CreatePersonCommand}" CommandParameter="{Binding}" />
+            <Button x:Name="EditButton" IsVisible="true" Text="Edit" Command="{Binding CreatePersonCommand}" CommandParameter="{Binding}" />
+            <Button x:Name="DeleteButton" IsVisible="true"  Text="Delete" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}" />
+            <Button x:Name="BackButton" Text="Back" Command="{Binding Path=ListViewModel.BackCommand}" />
         </StackLayout>
         <ListView x:Name="personsList" ItemsSource="{Binding Persons}"
               SelectedItem="{Binding SelectedPerson, Mode=OneWay}" HasUnevenRows="True">
