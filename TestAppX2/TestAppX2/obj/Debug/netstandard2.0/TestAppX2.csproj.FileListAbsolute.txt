@@ -1,0 +1,14 @@
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\bin\Debug\netstandard2.0\TestAppX2.deps.json
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\bin\Debug\netstandard2.0\TestAppX2.dll
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\bin\Debug\netstandard2.0\TestAppX2.pdb
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\View\PersonListPage.xaml.g.cs
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\View\PersonPage.xaml.g.cs
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\TestAppX2.csproj.CoreCompileInputs.cache
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\TestAppX2.AssemblyInfoInputs.cache
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\TestAppX2.AssemblyInfo.cs
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\TestAppX2.dll
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\TestAppX2.pdb
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\TestAppX2.csprojAssemblyReference.cache
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2\obj\Debug\netstandard2.0\View\PersonDetailsPage.xaml.g.cs

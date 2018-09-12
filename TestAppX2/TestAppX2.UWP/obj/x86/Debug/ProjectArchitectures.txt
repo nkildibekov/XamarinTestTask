@@ -1,0 +1,1 @@
+C:\Users\nickk\Documents\Visual Studio 2017\Projects\TestAppX2\TestAppX2\TestAppX2.UWP\TestAppX2.UWP.csproj;x86

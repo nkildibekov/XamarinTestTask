@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestAppX2.View.PersonDetailPage" Title="Contact info">
+    <StackLayout>
+        <StackLayout x:Name="personDetailStack">
+            <Label Text="First Name" />
+            <Entry Text="{Binding FirstName}" FontSize="Medium" />
+            <Label Text="Last Name" />
+            <Entry Text="{Binding LastName}" FontSize="Medium" />
+            <Label Text="Phone number" />
+            <Entry Text="{Binding PhoneNumber}" FontSize="Medium" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Delete" Command="{Binding ListViewModel.DeletePersonCommand}" CommandParameter="{Binding}" />
+            <Button Text="Back" Command="{Binding Path=ListViewModel.BackCommand}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
