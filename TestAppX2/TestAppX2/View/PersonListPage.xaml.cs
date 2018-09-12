@@ -10,8 +10,6 @@ namespace TestAppX2.View
         {
             InitializeComponent();
             BindingContext = new PersonListViewModel() { Navigation = this.Navigation };
-            var visible = true;
-            var unvisible = false;
         }
 
         

@@ -12,10 +12,12 @@ namespace TestAppX2.ViewModel
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public ICommand EditPersonCommand { protected set; get; }
         public ICommand CreatePersonCommand { protected set; get; }
         public ICommand DeletePersonCommand { protected set; get; }
         public ICommand SavePersonCommand { protected set; get; }
         public ICommand BackCommand { protected set; get; }
+
         PersonViewModel selectedPerson;
 
         public INavigation Navigation { get; set; }
@@ -31,6 +33,7 @@ namespace TestAppX2.ViewModel
                 new PersonViewModel() {FirstName="Maria", LastName="Prokopenko", PhoneNumber="+380993174320"},
                 new PersonViewModel() {FirstName="Svetlana", LastName="Ivanova", PhoneNumber="+380982159299"}
             };
+            EditPersonCommand = new Command(EditPerson);
             CreatePersonCommand = new Command(CreatePerson);
             DeletePersonCommand = new Command(DeletePerson);
             SavePersonCommand = new Command(SavePerson);
@@ -47,7 +50,6 @@ namespace TestAppX2.ViewModel
                     PersonViewModel tempPerson = value;
                     selectedPerson = null;
                     OnPropertyChanged("SelectedPerson");
-                    //Navigation.PushAsync(new PersonDetailPage(tempPerson));
                 }
             }
         }
@@ -56,9 +58,19 @@ namespace TestAppX2.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propName));
         }
 
+        private void EditPerson( object personObject )
+        {
+            PersonViewModel person = personObject as PersonViewModel;
+            if (person != null)
+            {
+                Navigation.PushAsync( new PersonEditPage( person ) );
+            }
+            Back();
+
+        }
         private void CreatePerson()
         {
-            Navigation.PushAsync(new PersonPage(new PersonViewModel() { ListViewModel = this }));
+            Navigation.PushAsync(new PersonCreatePage(new PersonViewModel() { ListViewModel = this }));
         }        
         private void SavePerson(object personObject)
         {
